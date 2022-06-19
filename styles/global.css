@@ -485,11 +485,17 @@ body {
 @media screen and (min-width: 1024px) {
   footer {
     width: 100%;
-    max-width: 1600px;
     margin: 0;
     background-color: #323232;
     padding: 64px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .div-foot__contain {
+    width: 100%;
+    max-width: 1600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -544,23 +550,29 @@ body {
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   footer {
     width: 100%;
-    max-width: 1024px;
     margin: 0;
     background-color: #323232;
     padding: 32px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .div-foot__contain {
+    width: 100%;
+    max-width: 1024px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
   footer .div-foot__contain1 {
-    padding: 8px;
+    padding: 16px;
     display: flex;
     align-items: center;
   }
   footer .div-foot__contain2 {
-    padding: 0 40px 0 0;
+    padding: 0 80px 0 0;
   }
 
   span {
@@ -568,7 +580,7 @@ body {
   }
 
   .filler {
-    width: 200px;
+    width: 500px;
   }
 
   img {
@@ -603,11 +615,17 @@ body {
 @media screen and (max-width: 767px) {
   footer {
     width: 100%;
-    max-width: 767px;
     margin: 0;
     background-color: #323232;
     padding: 16px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .div-foot__contain {
+    width: 100%;
+    max-width: 767px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -619,7 +637,7 @@ body {
     flex-direction: column;
   }
   footer .div-foot__contain2 {
-    padding: 0;
+    padding: 0 80px 0 0;
   }
   footer .div-foot__contain1:nth-of-type(1) {
     order: 1;
@@ -664,7 +682,7 @@ body {
 
   li {
     list-style: none;
-    padding-left: 8px;
+    padding-left: 18px;
   }
 
   a {
