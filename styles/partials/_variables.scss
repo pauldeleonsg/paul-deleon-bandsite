@@ -1,0 +1,48 @@
+/* _VARIABLES.SCSS */
+
+//font
+@font-face {
+    font-family: 'AvenirReg';
+    src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+    font-family: 'AvenirBold';
+    src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+    font-family: 'AvenirDemi';
+    src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf");
+}
+
+$fontcolor01 : #323232;
+$fontcolor02 : #ffffff;
+
+//colors
+$bgcolor01 : #ffffff;
+$bgcolor02 : #000000;
+$bgcolor03 : #fafafa;
+$bgcolor04 : #323232;
+
+
+$colorpri01 : #323232;      //bandsite blk
+$colorpri02 : #afafaf;      //silver
+$colorpri03 : #ffffff;      //white
+
+$colorsec01 : #000000;      //bandsite blk: CTA hover state.
+$colorsec02 : #e1e1e1;      //Mercury: Divider line. Form field outline.
+$colorsec03 : #fafafa;      //Alabaster: Alternative light background color
+
+$colorhdr01 : #323232;
+
+//breakpoints
+$desktop-breakpoint: 1024px;
+$tablet-breakpoint: 768px;
+$mobile-breakpoint: 767px;      //max
+
+
+
+
+
+

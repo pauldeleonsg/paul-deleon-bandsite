@@ -1,0 +1,224 @@
+/* _HEADER.SCSS */
+@use "./variables" as *;
+
+
+@mixin header-desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        header {
+            width: 100%;
+            height: 90px;
+            background-color: $colorhdr01;
+            color: $fontcolor02;
+            padding: 0 64px;
+        
+            position: fixed;
+            top: 0;
+            z-index: 99;
+        
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        
+            .header-logo {
+                display: flex;
+                padding: 30px;
+                
+                img {
+                    height: 20px;
+                    width: 120px;
+                }
+            }
+        
+            .header-nav {
+                display: flex;
+                align-self: flex-end;
+                margin: 0;
+                font-size: 12px;
+        
+                ul {
+                    display: flex;
+                    margin: 0;
+                    padding-left: 0;
+                }
+        
+                li {
+                    list-style: none;
+                    padding-bottom: 36px;
+                }
+        
+                li:nth-of-type(odd) {
+                    margin-right: 32px;
+                }
+        
+                li:hover {
+                    border-bottom: 4px solid $colorpri03;
+                }
+        
+                #here {
+                    font-weight: bold;
+                    border-bottom: 4px solid $colorpri03;
+                }
+                a {
+                    color: $fontcolor02;
+                    text-decoration: none;
+                }
+        
+                li.isInactive {
+                    color : $colorsec02;
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@mixin header-tablet {
+    @media screen and (max-width: $desktop-breakpoint) and
+    (min-width: $tablet-breakpoint) {
+        header {
+            width: 100%;
+            height: 90px;
+            background-color: $colorhdr01;
+            color: $fontcolor02;
+            padding: 0 32px;
+        
+            position: fixed;
+            top: 0;
+            z-index: 99;
+        
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        
+            .header-logo {
+                display: flex;
+                padding: 30px;
+                
+                img {
+                    height: 20px;
+                    width: 120px;
+                }
+            }
+        
+            .header-nav {
+                display: flex;
+                align-self: flex-end;
+                margin: 0;
+                font-size: 12px;
+        
+                ul {
+                    display: flex;
+                    margin: 0;
+                    padding-left: 0;
+                }
+        
+                li {
+                    list-style: none;
+                    padding-bottom: 36px;
+                }
+        
+                li:nth-of-type(odd) {
+                    margin-right: 32px;
+                }
+        
+                li:hover {
+                    border-bottom: 4px solid $colorpri03;
+                }
+        
+                #here {
+                    font-weight: bold;
+                    border-bottom: 4px solid $colorpri03;
+                }
+                a {
+                    color: $fontcolor02;
+                    text-decoration: none;
+                }
+        
+                li.isInactive {
+                    color : $colorsec02;
+                    border-bottom: 0;
+                }
+            }
+        }            
+            
+    }
+}
+
+
+@mixin header-mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+        header {
+            width: 100%;
+            min-width: 375px;
+            background-color: $colorhdr01;
+            color: $fontcolor02;
+        
+            position: fixed;
+            top: 0;
+            z-index: 99;
+        
+            display: inline-block;
+            text-align: center;
+        
+            .header-logo {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                
+                img {
+                    height: 30px;
+                    width: 180px;
+                }
+            }
+        
+            .header-nav {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-self: flex-end;
+                margin: 0;
+                font-size: 14px;
+        
+                ul {
+                    width: 100%;
+                    display: flex;
+                    margin: 0;
+                    padding-left: 0;
+                }
+        
+                li {
+                    list-style: none;
+                    width: 50%;
+                    padding-bottom: 16px;
+                }
+        
+                li:nth-of-type(odd) {
+                    margin-right: 32px;
+                }
+        
+                li:hover {
+                    border-bottom: 4px solid $colorpri03;
+                }
+        
+                #here {
+                    font-weight: bold;
+                    border-bottom: 4px solid $colorpri03;
+                }
+                a {
+                    color: $fontcolor02;
+                    text-decoration: none;
+                }
+        
+                li.isInactive {
+                    color : $colorsec02;
+                    border-bottom: 0;
+                }
+            }
+        }
+      
+    }
+}

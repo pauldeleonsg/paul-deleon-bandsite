@@ -1,0 +1,124 @@
+/* _HERO.SCSS */
+@use "./variables" as *;
+
+
+@mixin hero-desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        .div-hero {
+            width: 100%;
+            min-width: 1024px;
+            height: 100%;
+            min-height: 620px;
+        
+            background-image: url("../assets/images/hero-bio.jpg");
+            
+            background-size: cover;
+            background-position: center center; 
+            background-repeat: no-repeat; 
+
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+
+            margin-bottom: 70px;
+            
+            &__wrap {
+                width: 100%;
+                height: 620px;
+                color: $fontcolor02;
+                background-color: rgba(0, 0, 0, 0.5);
+        
+                display: flex;
+                align-items: center;
+        
+                padding: 64px;
+        
+            }
+        
+        }
+        
+    }
+}
+
+
+@mixin hero-tablet {
+    @media screen and (max-width: $desktop-breakpoint) and
+    (min-width: $tablet-breakpoint) {
+        .div-hero {
+            width: 100%;
+            min-width: 768px;
+            height: 100%;
+            min-height: 510px;
+        
+            background-image: url("../assets/images/hero-bio.jpg");
+            
+            background-size: cover;
+            background-position: center center; 
+            background-repeat: no-repeat; 
+
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+
+            margin-bottom: 40px;
+            
+            &__wrap {
+                width: 100%;
+                height: 510px;
+                color: $fontcolor02;
+                background-color: rgba(0, 0, 0, 0.5);
+        
+                display: flex;
+                align-items: center;
+        
+                padding: 32px;
+        
+            }
+        
+        }
+        
+    }
+}
+
+
+
+@mixin hero-mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+        .div-hero {
+            width: 100%;
+            max-width: 767px;
+            min-height: 375px;
+            height: 100%;
+            max-height: 510px;
+            min-height: 250px;
+        
+            background-image: url("../assets/images/hero-bio.jpg");
+            
+            background-size: cover;
+            background-position: center right; 
+            background-repeat: no-repeat; 
+
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+
+            margin-bottom: 24px;
+            
+            &__wrap {
+                width: 100%;
+                color: $fontcolor02;
+                background-color: rgba(0, 0, 0, 0.5);
+        
+                display: flex;
+                align-items: center;
+                flex: 1 1 auto;
+        
+                padding: 32px;
+        
+            }
+        
+        }
+        
+    }
+}
+

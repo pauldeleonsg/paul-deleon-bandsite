@@ -1,0 +1,156 @@
+/* FONTS.SCSS */
+@use "./variables" as *;
+
+
+@mixin fonts-desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        h1 {
+            font-family: "AvenirBold";
+            font-size: 60px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        h2 {
+            font-family: "AvenirBold";
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        h3, h4 {
+            font-family: "AvenirDemi";
+            font-size: 24px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 180%;
+            font-weight: 400;
+        }
+
+        .font-footer {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+        
+        .font-label {
+            font-family: "AvenirBold";
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+      
+    }
+}
+
+
+
+@mixin fonts-tablet {
+    @media screen and (max-width: $desktop-breakpoint) and
+    (min-width: $tablet-breakpoint) {
+        h1 {
+            font-family: "AvenirBold";
+            font-size: 60px;
+            //line-height: 68px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        h2 {
+            font-family: "AvenirBold";
+            font-size: 40px;
+            //line-height: 32px;;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        h3 {
+            font-family: "AvenirDemi";
+            font-size: 24px;
+            line-height: 180%;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        h4 {
+            font-family: "AvenirDemi";
+            font-size: 18px;
+            line-height: 180%;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 180%;
+            font-weight: 400;
+        }
+
+        .font-footer {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+        
+        .font-label {
+            font-family: "AvenirBold";
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+      
+    }
+}
+
+
+@mixin fonts-mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+        h1 {
+            font-family: "AvenirBold";
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        h2 {
+            font-family: "AvenirBold";
+            font-size: 24px;
+            line-height: 32px;;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        h3, h4 {
+            font-family: "AvenirDemi";
+            font-size: 14px;
+            line-height: 180%;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 180%;
+            font-weight: 400;
+        }
+
+        .font-footer {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 400;
+        }
+        
+        .font-label {
+            font-family: "AvenirBold";
+            font-size: 10px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+      
+    }
+}

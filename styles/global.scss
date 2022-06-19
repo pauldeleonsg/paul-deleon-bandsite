@@ -1,0 +1,75 @@
+/* GLOBAL.SCSS */
+
+// import files
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+@use "./partials/header" as *;
+@use "./partials/hero" as *;
+@use "./partials/blocks" as *;
+@use "./partials/gallery" as *;
+@use "./partials/footer" as *;
+@use "./bio.css" as *;      //???
+@use "./partials/fonts" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'FontAvenir', Arial, Helvetica, sans-serif;
+    background-color: $bgcolor01;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+//header
+@include header-desktop;
+@include header-tablet;
+@include header-mobile;
+
+
+
+//hero
+@include hero-desktop;
+@include hero-tablet;
+@include hero-mobile;
+
+
+
+//blocks
+@include block-desktop;
+@include block-tablet;
+@include block-mobile;
+
+
+
+//gallery
+@include gallery-desktop;
+@include gallery-tablet;
+@include gallery-mobile;
+
+
+//footer
+@include footer-desktop;
+@include footer-tablet;
+@include footer-mobile;
+
+
+//fonts
+@include fonts-desktop;
+@include fonts-tablet;
+@include fonts-mobile;
+
+
+//etc
+.div-buffer {
+    width: 100%;
+    height: 90px;
+    background-color: aqua;
+    clear: both;
+}

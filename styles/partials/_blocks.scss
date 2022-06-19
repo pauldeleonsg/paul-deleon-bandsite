@@ -1,0 +1,83 @@
+/* _BLOCKS.SCSS */
+@use "./variables" as *;
+
+
+@mixin block-desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        .div-block {
+            box-sizing: border-box;
+            width: 100%;
+            margin: 32px 64px;
+            clear: both;
+            
+            &__content {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+
+        p {
+            width: 50%;
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@mixin block-tablet {
+    @media screen and (max-width: $desktop-breakpoint) and
+    (min-width: $tablet-breakpoint) {
+        .div-block {
+            box-sizing: border-box;
+            width: 100%;
+            margin: 24px 36px;
+            clear: both;
+            
+            &__content {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+
+        p {
+            width: 50%;
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+@mixin block-mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+        .div-block {
+            box-sizing: border-box;
+            width: 100%;
+            margin: 8px 16px;
+            clear: both;
+
+            &__content {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
