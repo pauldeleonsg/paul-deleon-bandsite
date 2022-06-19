@@ -407,6 +407,13 @@ body {
     width: 30%;
     padding: 10px;
   }
+  .div-gallery img {
+    filter: grayscale(70%);
+    transition: filter 0.4s ease-in-out;
+  }
+  .div-gallery img:hover {
+    filter: none;
+  }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .div-gallery {
@@ -434,6 +441,13 @@ body {
     width: 30%;
     padding: 10px;
   }
+  .div-gallery img {
+    filter: grayscale(70%);
+    transition: filter 0.4s ease-in-out;
+  }
+  .div-gallery img:hover {
+    filter: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .div-gallery {
@@ -459,6 +473,13 @@ body {
   .div-gallery__thumbnail {
     width: 100%;
     padding: 10px;
+  }
+  .div-gallery img {
+    filter: grayscale(70%);
+    transition: filter 0.4s ease-in-out;
+  }
+  .div-gallery img:hover {
+    filter: none;
   }
 }
 @media screen and (min-width: 1024px) {
