@@ -61,6 +61,11 @@
             list-style: none;
             padding-left: 18px;
         }
+
+        a {
+            color: $fontcolor02;
+            text-decoration: none;
+        }
         
     }
 }
@@ -125,6 +130,11 @@
         li {
             list-style: none;
             padding-left: 18px;
+        }
+
+        a {
+            color: $fontcolor02;
+            text-decoration: none;
         }
     }
 }
@@ -196,6 +206,11 @@
         li {
             list-style: none;
             padding-left: 8px;
+        }
+
+        a {
+            color: $fontcolor02;
+            text-decoration: none;
         }
     }
 }

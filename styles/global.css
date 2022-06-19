@@ -514,6 +514,11 @@ body {
     list-style: none;
     padding-left: 18px;
   }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   footer {
@@ -567,6 +572,11 @@ body {
   li {
     list-style: none;
     padding-left: 18px;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -634,6 +644,11 @@ body {
   li {
     list-style: none;
     padding-left: 8px;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 1024px) {
