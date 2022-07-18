@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles/global.css">
+
+    <script src="./scripts/codConvo.js"></script>
     
 </head>
 
@@ -15,118 +17,186 @@
     
     <!-- HEADER -->
     <header>
-        <div class="header-logo">
-            <a href="index.html"><img src="./assets/logos/Logo-bandsite.svg"></a>
-        </div>
-
-        <div class="header-nav">
-            <ul>
-                <li id="here"><a href="index.html">Biography</a></li>
-                <li class="isInactive">Shows</li>
-            </ul>
+        <div class="header-wrap">
+            <div class="header-logo">
+                <a href="index.html"><img src="./assets/logos/Logo-bandsite.svg"></a>
+            </div>
+    
+            <div class="header-nav">
+                <ul>
+                    <li id="here"><a href="index.html">Biography</a></li>
+                    <li><a href="./pages/shows.html">Shows</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
-    <div class="div-buffer">&nbsp;</div>    <!-- top buffer -->
+
+    <div class="spine">     
+        <div class="binder">        <!-- CENTERED CONTAINER --> 
+
+            <div class="div-buffer">&nbsp;</div>    <!-- top filler -->
     
+            
+            <!-- HERO -->
+            <div class="hero hero_bio">
+                <div class="hero-div__content">
+                    <h1>The Bees Knees</h1>
+                </div>
 
-    <!-- HERO -->
-    <div class="div-hero">
-        <div class="div-hero__wrap">
-            <h1>The Bees Knees</h1>
-        </div>
-    </div>
+                <div class="hero-div__content2">
+                    &nbsp;
+                </div>
+            </div>
 
-    <div class="div-block">
-        <h2>About the Musicians</h2>
-    </div>
 
-    <div class="div-block">
-        <div class="div-block__content">
-            <img src="./assets/images/band.jpg">
-        </div>
-    </div>
+            <!-- WRITEUP -->
+            <div class="writeup">
+                <div class="writeup-div__content">
+                    <h2>About the Musicians</h2>
+                </div>
 
-    <div class="div-block">
-        <div class="div-block__content">
-            <h3>
-                "We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'"
-            </h3>
-            <h4>
-                - Bryan Teddy, lead vocalist of The Bees Knees
-            </h4>
-        </div>
-    </div>
+                <div class="writeup-div__content2">
+                    <div class="writeup-img__box">
+                        <img src="./assets/images/band.jpg">
+                        <span>The Bees Knees &copy;</span>
+                    </div>
+                </div>
 
-    <div class="div-block">
-        <div class="div-block__content">
-            <h3>The Bees Knees</h3>
-        </div>
+                <div class="writeup-div__content2">
+                    <h3>
+                        "We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'"
+                    </h3>
+                    <h4>
+                        - Bryan Teddy, lead vocalist of The Bees Knees
+                    </h4>
+                </div>
 
-        <div class="div-block__content">
-            <p>The Bees Knees is a pop rock band originating from San Francisco, California. The band consists of lead vocalist Bryan Teddy, guitarist Mack Tolkens, guitarist Andrew Green, bassist Kent Zulkee and drummer Freddie Fischer. The band achieved its first commercial success as an unsigned act, drawing attention from manager Cam Adams. Having worked with other popular acts (The Elephant In The Room, One Trick Pony, The Cat's Meow), Adams was confident the band could succeed even further, pushing them to sign with Magenta Records.</p>
+                <div class="writeup-div__content2">
+                    <h2>The Bees Knees</h2>
 
-            <p>From there, the band has soared, gaining international recognition and ranking in the top 10 on the Poster Charts. New fans immediately fell in love with the band's original and organic attitude, solidifying their place as one of the hottest and fastest up and coming acts of this century. Fans affectionately refer to themselves as “The Hive” and are drawn to their candid and authentic performances on stage. Looking forward to touring in the future, The Bees Knees are currently recording their second studio album, looking to be released in late 2021.</p>
-        </div>
-        
-    </div>
-
+                    <div class="writeup-div__content3">
+                        <p>The Bees Knees is a pop rock band originating from San Francisco, California. The band consists of lead vocalist Bryan Teddy, guitarist Mack Tolkens, guitarist Andrew Green, bassist Kent Zulkee and drummer Freddie Fischer. The band achieved its first commercial success as an unsigned act, drawing attention from manager Cam Adams. Having worked with other popular acts (The Elephant In The Room, One Trick Pony, The Cat's Meow), Adams was confident the band could succeed even further, pushing them to sign with Magenta Records.</p>
     
-
-    <!-- GALLERY -->
-    <div class="div-gallery">
-        <div class="div-gallery__content">
-            <h2>Photo Gallery</h2>
-        </div>
-
-        <div class="div-gallery__content2">
-            <div class="div-gallery__thumbnail">
-                <a><img src="./assets/images/Photo-gallery-1.jpg"></a>
+                        <p>From there, the band has soared, gaining international recognition and ranking in the top 10 on the Poster Charts. New fans immediately fell in love with the band's original and organic attitude, solidifying their place as one of the hottest and fastest up and coming acts of this century. Fans affectionately refer to themselves as “The Hive” and are drawn to their candid and authentic performances on stage. Looking forward to touring in the future, The Bees Knees are currently recording their second studio album, looking to be released in late 2021.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="div-gallery__thumbnail">
-                <a><img src="./assets/images/Photo-gallery-2.jpg"></a>
+
+            <!-- GALLERY -->
+            <div class="gallery">
+                <div class="gallery-div__content">
+                    <h2>Photo Gallery</h2>
+                </div>
+
+                <div class="gallery-div__content2">
+                    <div class="gallery-div__thumbnail">
+                        <a><img src="./assets/images/Photo-gallery-1.jpg"></a>
+                    </div>
+
+                    <div class="gallery-div__thumbnail">
+                        <a><img src="./assets/images/Photo-gallery-2.jpg"></a>
+                    </div>
+
+                    <div class="gallery-div__thumbnail">
+                        <a><img src="./assets/images/Photo-gallery-3.jpg"></a>
+                    </div>
+
+                    <div class="gallery-div__thumbnail">
+                        <a><img src="./assets/images/Photo-gallery-4.jpg"></a>
+                    </div>
+
+                    <div class="gallery-div__thumbnail">
+                        <a><img src="./assets/images/Photo-gallery-5.jpg"></a>
+                    </div>
+
+                    <div class="gallery-div__thumbnail">
+                        <a><img src="./assets/images/Photo-gallery-6.jpg"></a>
+                    </div>
+
+                    <div class="gallery-div__thumbnail">
+                        <a><img src="./assets/images/Photo-gallery-7.jpg"></a>
+                    </div>
+
+                    <div class="gallery-div__thumbnail">
+                        <a><img src="./assets/images/Photo-gallery-8.jpg"></a>
+                    </div>
+
+                    <div class="gallery-div__thumbnail">
+                        <a><img src="./assets/images/Photo-gallery-9.jpg"></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="div-gallery__thumbnail">
-                <a><img src="./assets/images/Photo-gallery-3.jpg"></a>
+
+            <!-- CONVOFORM -->
+            <div class="convo">
+                <div class="convo-div__content">
+                    <h2>Join the Conversation</h2>
+                </div>
+
+                <div class="convo-div__content2">
+                    <div class="convo-div__content3">
+                        <div class="convo-div__form-filler">&nbsp;</div>
+                        <label for="cName">Name</label>
+                    </div>
+
+                    <div class="convo-div__content3">
+                        <div class="convo-div__img-avatar">
+                            <img class="avatar" src="./assets/images/Mohan-muruge.jpg">
+                        </div>
+                        <input type="text" maxlength="50" id="frmName" placeholder="Enter your name">
+                    </div>
+
+                    <div class="convo-div__content3">
+                        <div class="convo-div__form-filler">&nbsp;</div>
+                        <label>Comment</label>
+                    </div>
+
+                    <div class="convo-div__content3">
+                        <div class="convo-div__form-filler">&nbsp;</div>
+                        <textarea id="frmComment" placeholder="Add a new comment"></textarea>
+                    </div>
+
+                    <div class="convo-div__content3">
+                        <div class="convo-div__form-button">
+                            <button id="frmSubmit">Comment</button>    
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="div-gallery__thumbnail">
-                <a><img src="./assets/images/Photo-gallery-4.jpg"></a>
-            </div>
-
-            <div class="div-gallery__thumbnail">
-                <a><img src="./assets/images/Photo-gallery-5.jpg"></a>
-            </div>
-
-            <div class="div-gallery__thumbnail">
-                <a><img src="./assets/images/Photo-gallery-6.jpg"></a>
-            </div>
-
-            <div class="div-gallery__thumbnail">
-                <a><img src="./assets/images/Photo-gallery-7.jpg"></a>
-            </div>
-
-            <div class="div-gallery__thumbnail">
-                <a><img src="./assets/images/Photo-gallery-8.jpg"></a>
-            </div>
-
-            <div class="div-gallery__thumbnail">
-                <a><img src="./assets/images/Photo-gallery-9.jpg"></a>
-            </div>
-        </div>
-        
-    </div>
+            
+            <!-- CONVOFORM END -->
     
+            <!-- CONVOARRAY -->
+            <div class="convo" id="divConvo">
+                
+            </div>
+            <script>
+                window.addEventListener('load', displayComment);
+
+                const frmBtn = document.getElementById("frmSubmit");
+                frmBtn.addEventListener("click", getForm);
+            </script>
+            <!-- CONVOARRAY END -->
+
+
+        </div>
+
+
+    </div>
+
 
     <!-- FOOTER -->
     <footer>
-        <div class="div-foot__contain">
-            <div class="div-foot__contain1">
-                <span>
-                    <h2>Get in touch</h2>
-                </span>
+        <div class="footer-wrap">
+
+            <!-- get in touch -->
+            <div class="footer-div__contain1">
+                <span><h2>Get in touch</h2></span>
                 <span>
                     <ul>
                         <li><a href="https://www.instagram.com/" target="_blank"><img class="social" src="./assets/icons/Icon-instagram.svg"></a></li>
@@ -135,74 +205,87 @@
                     </ul>
                 </span>
             </div>
-    
-            <div class="div-foot__contain1">
+
+
+            <!-- footer logo -->
+            <div class="footer-div__contain1">
                 <a href="index.html"><img class="logo" src="./assets/logos/Logo-bandsite.svg"></a>
             </div>
-    
-            <div class="div-foot__contain1">
-                <div class="div-foot__contain2">
-                    <span class="font-footer">
+
+
+            <!-- contacts -->
+            <div class="footer-div__contain1">
+                <!-- contact1 -->
+                <div class="footer-div__contain2">
+                    <p class="font-footer">
                         <b>Cam Adams<br>
                         The Bees Knees Management</b>
-                    </span><br><br>
-    
-                    <span class="font-footer">
+                    </p>
+            
+                    <p class="font-footer">
                         503 Broadway Penthouse,<br>
                         New York, NY 10012, USA
-                    </span><br><br>
-    
-                    <span class="font-footer">
+                    </p>
+            
+                    <p class="font-footer">
                         <a href="mailto://info@thebeeskness.com">info@thebeeskness.com</a>
-                    </span><br><br>
+                    </p>
                 </div>
-    
-                <div class="div-foot__contain2">
-                    <span class="font-footer">
+
+
+                <!-- contact2 -->
+                <div class="footer-div__contain2">
+                    <p class="font-footer">
                         <b>Pearl Gregg<br>
                         Limitless Artist Group</b>
-                    </span><br><br>
-    
-                    <span class="font-footer">
+                    </p>
+            
+                    <p class="font-footer">
                         Booking Agent for<br>
                         USA / South America / Japan
-                    </span><br><br>
-    
-                    <span class="font-footer">
+                    </p>
+            
+                    <p class="font-footer">
                         <a href="mailto://pearl.gregg@limitlessag.com">pearl.gregg@limitlessag.com</a>
-                    </span><br><br>
+                    </p>
                 </div>
-    
-                <div class="div-foot__contain2">
-                    <span class="font-footer">
+
+
+                <!-- contact3 -->
+                <div class="footer-div__contain2">
+                    <p class="font-footer">
                         <b>Carson Whyte<br>
                         ARCH Entertainment</b>
-                    </span><br><br>
-    
-                    <span class="font-footer">
+                    </p>
+            
+                    <p class="font-footer">
                         Booking Agent for<br>
                         UK / EU / AU
-                    </span><br><br>
-    
-                    <span class="font-footer">
+                    </p>
+            
+                    <p class="font-footer">
                         <a href="mailto://whyte@archentertainment.com">whyte@archentertainment.com</a>
-                    </span><br><br>
+                    </p>
                 </div>
-    
-                <div class="div-foot__contain2 filler"></div>
-            </div>
-    
-            <div class="div-foot__contain1">
-                <span class="font-footer">
-                    Copyright The Bees Knees © 2021 All Rights Reserved
-                </span>
+
+
+                <div class="footer-div__contain2 filler"></div>     <!-- space filler -->
             </div>
 
+            
+            <!-- copyright -->
+            <div class="footer-div__contain1">
+                <p class="font-footer">
+                    Copyright The Bees Knees © 2021 All Rights Reserved
+                </p>
+            </div>
         </div>
 
-
     </footer>
+    
 </body>
 </html>
+
+
 
 

@@ -1,0 +1,54 @@
+/* _LAYOUT.SCSS */
+@use "./variables" as *;
+
+
+@mixin layout-desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        .spine {
+            width: $spine-desktop;
+            margin: auto;
+            background-color: $bgcolor03;
+        }
+
+        .binder {
+            width: $bind-desktop;
+            margin: auto;
+            background-color: $bgcolor01;
+        }
+    }
+}
+
+@mixin layout-tablet {
+    @media screen and (max-width: $desktop-breakpoint) and
+    (min-width: $tablet-breakpoint) {
+        .spine {
+            width: $spine-tablet;
+            margin: auto;
+            background-color: $bgcolor03;
+        }
+
+        .binder {
+            width: $bind-tablet;
+            margin: auto;
+            background-color: $bgcolor01;
+
+        }
+    }
+}
+
+
+@mixin layout-mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+        .spine {
+            width: $spine-mobile;
+            margin: auto;
+            background-color: $bgcolor03;
+        }
+
+        .binder {
+            width: $bind-mobile;
+            margin: auto;
+            background-color: $bgcolor01;
+        }
+    }
+}

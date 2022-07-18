@@ -32,6 +32,7 @@
     }
 }
 
+
 @mixin block-tablet {
     @media screen and (max-width: $desktop-breakpoint) and
     (min-width: $tablet-breakpoint) {

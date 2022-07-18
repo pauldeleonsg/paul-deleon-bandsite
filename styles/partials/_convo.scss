@@ -1,0 +1,490 @@
+/* _CONVO.SCSS */
+@use "./variables" as *;
+
+
+@mixin convo-desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        .convo {
+            width: 100%;
+            margin: auto;
+            background-color: $bgcolor01;
+            padding-bottom: 40px;
+
+            &-div__content {
+                width: 100%;
+                padding: 40px 64px 0 64px;
+                margin: auto;
+            }
+
+            &-div__content2 {
+                width: 80%;
+                margin: auto;
+
+            }
+
+            &-div__content3 {
+                width: 100%;
+                max-width: 700px;
+                margin: auto;
+                margin-bottom: 10px;
+                
+                display: flex;
+            }
+
+            &-div__content4 {
+                width: 100%;
+                max-width: 700px;
+                margin: auto;
+                margin-bottom: 10px;
+                border-bottom: 1px solid $colorsec02;
+                
+                display: flex;
+
+            }
+
+            &-div__form-filler {
+                width: 20%;
+                min-width: 60px;
+            }
+            
+            &-div__img-avatar {
+                width: 20%;
+                min-width: 60px;
+                text-align: center;
+            }
+
+            &-div__form-button {
+                width: 100%;
+                text-align: right;
+            }
+
+            &-div__error {
+                width: 100%;
+                max-width: 700px;
+                margin: auto;
+            }
+            
+        }
+
+        img.avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: $colorpri02;
+        }
+
+        label {
+            width: 80%;
+            min-width: 500px;
+            padding: 0;
+            font-family: "AvenirBold";
+            font-size: 12px;
+            line-height: 20px;
+            color: $colorpri02;
+            //text-transform: uppercase;
+        }
+
+        input[type=text]{
+            width: 80%;
+            min-width: 500px;
+            height: 46px;
+            padding: 16px;
+            border: 1px solid $colorsec02;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: $colorsec03;
+            font-family: "AvenirDemi";
+            font-size: 16px;
+        }
+
+        input[type=text].active {
+            border: 1px solid $colorpri01;
+        }
+
+        textarea {
+            width: 80%;
+            min-width: 500px;
+            height: 150px;
+            padding: 16px;
+            box-sizing: border-box;
+            border: 1px solid $colorsec02;
+            border-radius: 4px;
+            background-color: $colorsec03;
+            font-family: "AvenirDemi";
+            font-size: 16px;
+            resize: none;
+        }
+
+        textarea.active {
+            border: 1px solid $colorpri01;
+        }
+          
+        button {
+            width: 20%;
+            height: 46px;
+            border-radius: 4px;
+            font-family: "AvenirDemi";
+            font-size: 14px;
+            color: $fontcolor02;
+            background-color: $colorpri01;
+        }
+
+        button:hover {
+            color: $fontcolor02;
+            background-color: $colorsec01;
+        }
+
+        ul.convo-ul__comment {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            li:nth-of-type(1) {
+                width: 70%;
+                font-weight: bold;
+                color: $colorpri01;
+            }
+
+            li:nth-of-type(2) {
+                width: 30%;
+                text-align: right;
+                color: $colorpri02;
+            }
+
+            li:nth-of-type(3) {
+                width: 100%;
+                padding-top: 10px;
+                color: $colorpri01;
+                font-size: 14px;
+                line-height: 160%;
+            }
+        }
+
+        hr {
+            border: 1px solid $colorsec02;
+            width: 100%;
+            //max-width: 600px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@mixin convo-tablet {
+    @media screen and (max-width: $desktop-breakpoint) and
+    (min-width: $tablet-breakpoint) {
+        .convo {
+            width: 100%;
+            margin: auto;
+            background-color: $bgcolor01;
+            padding-bottom: 40px;
+
+            &-div__content {
+                width: 100%;
+                padding: 40px 32px 0 32px;
+                margin: auto;
+            }
+
+            &-div__content2 {
+                width: 80%;
+                margin: auto;
+
+            }
+
+            &-div__content3 {
+                width: 100%;
+                margin: auto;
+                margin-bottom: 10px;
+                
+                display: flex;
+            }
+
+            &-div__content4 {
+                width: 100%;
+                margin: auto;
+                margin-bottom: 10px;
+                
+                display: flex;
+
+            }
+
+            &-div__form-filler {
+                width: 20%;
+                min-width: 60px;
+            }
+            
+            &-div__img-avatar {
+                width: 20%;
+                min-width: 60px;
+                text-align: center;
+            }
+
+            &-div__form-button {
+                width: 100%;
+                text-align: right;
+            }
+
+            &-div__error {
+                width: 100%;
+                margin: auto;
+            }
+            
+        }
+
+        img.avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: $colorpri02;
+        }
+
+        label {
+            width: 80%;
+            padding: 0;
+            font-family: "AvenirBold";
+            font-size: 12px;
+            line-height: 20px;
+            color: $colorpri02;
+        }
+
+        input[type=text]{
+            width: 80%;
+            height: 46px;
+            padding: 16px;
+            border: 1px solid $colorsec02;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: $colorsec03;
+            font-family: "AvenirDemi";
+            font-size: 16px;
+        }
+
+        input[type=text].active {
+            border: 1px solid $colorpri01;
+        }
+
+        textarea {
+            width: 80%;
+            height: 150px;
+            padding: 16px;
+            box-sizing: border-box;
+            border: 1px solid $colorsec02;
+            border-radius: 4px;
+            background-color: $colorsec03;
+            font-family: "AvenirDemi";
+            font-size: 16px;
+            resize: none;
+        }
+
+        textarea.active {
+            border: 1px solid $colorpri01;
+        }
+          
+        button {
+            width: 20%;
+            height: 46px;
+            border-radius: 4px;
+            font-family: "AvenirDemi";
+            font-size: 14px;
+            color: $fontcolor02;
+            background-color: $colorpri01;
+        }
+
+        button:hover {
+            color: $fontcolor02;
+            background-color: $colorsec01;
+        }
+
+        ul.convo-ul__comment {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+
+            li:nth-of-type(1) {
+                width: 70%;
+                font-weight: bold;
+                color: $colorpri01;
+            }
+
+            li:nth-of-type(2) {
+                width: 30%;
+                text-align: right;
+                color: $colorpri02;
+            }
+
+            li:nth-of-type(3) {
+                width: 100%;
+                padding-top: 10px;
+                color: $colorpri01;
+                font-size: 14px;
+                line-height: 160%;
+            }
+        }
+
+        hr {
+            border: 1px solid $colorsec02;
+            width: 70%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+@mixin convo-mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+        .convo {
+            width: 100%;
+            margin: auto;
+            background-color: $bgcolor01;
+            padding-bottom: 40px;
+
+            &-div__content {
+                width: 100%;
+                padding: 40px 32px 0 32px;
+                margin: auto;
+            }
+
+            &-div__content2 {
+                width: 80%;
+                margin: auto;
+
+            }
+
+            &-div__content3 {
+                width: 100%;
+                margin: auto;
+                margin-bottom: 10px;
+                
+                display: flex;
+            }
+
+            &-div__content4 {
+                width: 100%;
+                margin: auto;
+                margin-bottom: 10px;
+                
+                display: flex;
+
+            }
+
+            &-div__form-filler {
+                width: 20%;
+                min-width: 60px;
+            }
+            
+            &-div__img-avatar {
+                width: 20%;
+                min-width: 60px;
+                text-align: center;
+            }
+
+            &-div__form-button {
+                width: 100%;
+                text-align: right;
+            }
+
+            &-div__error {
+                width: 100%;
+                margin: auto;
+            }
+            
+        }
+
+        img.avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: $colorpri02;
+        }
+
+        label {
+            width: 80%;
+            padding: 0;
+            font-family: "AvenirBold";
+            font-size: 12px;
+            line-height: 20px;
+            color: $colorpri02;
+        }
+
+        input[type=text]{
+            width: 80%;
+            height: 46px;
+            padding: 16px;
+            border: 1px solid $colorsec02;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: $colorsec03;
+            font-family: "AvenirDemi";
+            font-size: 16px;
+        }
+
+        input[type=text].active {
+            border: 1px solid $colorpri01;
+        }
+
+        textarea {
+            width: 80%;
+            height: 150px;
+            padding: 16px;
+            box-sizing: border-box;
+            border: 1px solid $colorsec02;
+            border-radius: 4px;
+            background-color: $colorsec03;
+            font-family: "AvenirDemi";
+            font-size: 16px;
+            resize: none;
+        }
+
+        textarea.active {
+            border: 1px solid $colorpri01;
+        }
+          
+        button {
+            width: 20%;
+            height: 46px;
+            border-radius: 4px;
+            font-family: "AvenirDemi";
+            font-size: 14px;
+            color: $fontcolor02;
+            background-color: $colorpri01;
+        }
+
+        button:hover {
+            color: $fontcolor02;
+            background-color: $colorsec01;
+        }
+
+        ul.convo-ul__comment {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+
+            li:nth-of-type(1) {
+                width: 70%;
+                font-weight: bold;
+                color: $colorpri01;
+            }
+
+            li:nth-of-type(2) {
+                width: 30%;
+                text-align: right;
+                color: $colorpri02;
+            }
+
+            li:nth-of-type(3) {
+                width: 100%;
+                padding-top: 10px;
+                color: $colorpri01;
+                font-size: 14px;
+                line-height: 160%;
+            }
+        }
+
+        hr {
+            border: 1px solid $colorsec02;
+            width: 70%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+    }
+}

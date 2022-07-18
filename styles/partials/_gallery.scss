@@ -4,43 +4,44 @@
 
 @mixin gallery-desktop {
     @media screen and (min-width: $desktop-breakpoint) {
-        .div-gallery {
-            box-sizing: border-box;
+        .gallery {
             width: 100%;
-            margin: 0;
+            margin: auto;
             background-color: $bgcolor03;
+            padding-bottom: 64px;
 
-            &__content {
-                box-sizing: border-box;
+            &-div__content {
                 width: 100%;
-                padding: 32px 64px;
-                clear: both;
+                padding: 40px 64px 0 64px;
+                margin: auto;
             }
 
-            &__content2 {
-                box-sizing: border-box;
+            &-div__content2 {
                 width: 100%;
-                padding: 32px 64px;
-                display: flex;
+                padding: 40px 64px 0 64px;
+                
+                display: inline-flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between;
             }
 
-            &__thumbnail {
+            &-div__thumbnail {
                 width: 30%;
                 padding: 10px;
+                box-shadow: 2px 10px 10px 2px $colorpri02;
+                margin-bottom: 20px;
             }
 
             img {
-                filter: grayscale(70%);
+                width: 100%;
+                filter: grayscale(80%);
                 transition: filter 0.4s ease-in-out;
             }
 
             img:hover {
                 filter: none;
             }
-
         }
         
     }
@@ -49,36 +50,38 @@
 @mixin gallery-tablet {
     @media screen and (max-width: $desktop-breakpoint) and
     (min-width: $tablet-breakpoint) {
-        .div-gallery {
-            box-sizing: border-box;
+        .gallery {
             width: 100%;
-            margin: 0;
+            margin: auto;
             background-color: $bgcolor03;
+            padding-bottom: 32px;
 
-            &__content {
-                box-sizing: border-box;
+            &-div__content {
                 width: 100%;
-                margin: 24px 36px;
-                clear: both;
+                padding: 20px 32px 0 32px;
+                margin: auto;
             }
 
-            &__content2 {
-                box-sizing: border-box;
+            &-div__content2 {
                 width: 100%;
-                padding: 32px 64px;
-                display: flex;
+                padding: 20px 32px 0 32px;
+                
+                display: inline-flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between;
             }
 
-            &__thumbnail {
+            &-div__thumbnail {
                 width: 30%;
-                padding: 10px;
+                padding: 6px;
+                box-shadow: 2px 8px 8px 2px $colorpri02;
+                margin-bottom: 16px;
             }
 
             img {
-                filter: grayscale(70%);
+                width: 100%;
+                filter: grayscale(80%);
                 transition: filter 0.4s ease-in-out;
             }
 
@@ -86,42 +89,45 @@
                 filter: none;
             }
         }
+        
     }
 }
 
 
 @mixin gallery-mobile {
     @media screen and (max-width: $mobile-breakpoint) {
-        .div-gallery {
-            box-sizing: border-box;
+        .gallery {
             width: 100%;
-            margin: 0;
+            margin: auto;
             background-color: $bgcolor03;
+            padding-bottom: 24px;
 
-            &__content {
-                box-sizing: border-box;
+            &-div__content {
                 width: 100%;
-                margin: 8px 16px;
-                clear: both;
+                padding: 12px 16px 0 16px;
+                margin: auto;
             }
 
-            &__content2 {
-                box-sizing: border-box;
-                width: 90%;
-                margin: 8px 16px;
+            &-div__content2 {
+                width: 100%;
+                padding: 12px 16px 0 16px;
+                
                 display: flex;
                 flex-direction: column;
                 //flex-wrap: wrap;
                 justify-content: space-between;
             }
 
-            &__thumbnail {
+            &-div__thumbnail {
                 width: 100%;
-                padding: 10px;
+                padding: 6px;
+                box-shadow: 2px 8px 8px 2px $colorpri02;
+                margin-bottom: 16px;
             }
 
             img {
-                filter: grayscale(70%);
+                width: 100%;
+                filter: grayscale(80%);
                 transition: filter 0.4s ease-in-out;
             }
 
@@ -129,5 +135,6 @@
                 filter: none;
             }
         }
+        
     }
 }

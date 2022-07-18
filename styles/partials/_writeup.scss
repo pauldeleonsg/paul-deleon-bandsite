@@ -1,0 +1,188 @@
+/* _WRITEUP.SCSS */
+@use "./variables" as *;
+
+
+@mixin writeup-desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        .writeup {
+            width: 100%;
+            margin: auto;
+            
+            &-div__content {
+                width: 100%;
+                padding: 40px 64px 0 64px;
+                margin: auto;
+            }
+
+            &-div__content2 {
+                width: 80%;
+                padding: 40px 0 0 0;
+                margin: auto;
+                
+            }
+
+            &-div__content3 {
+                width: 100%;
+                margin: auto;
+
+                display: inline-flex;
+                justify-content: space-between;
+
+                p {
+                    width: 48%;
+                }
+            }
+
+            .writeup-img__box {
+                width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 14px solid $colorpri03;
+                box-shadow: 2px 10px 10px 5px $colorpri02;
+                margin-bottom: 20px;
+
+                font-family: "Another Typewriter";
+                font-size: 12px;
+                text-align: right;
+            }
+            
+            img {
+                width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h3, h4 {
+                font-family: "Another Typewriter";
+                line-height: 180%;
+            }
+        }
+        
+    }
+}
+
+@mixin writeup-tablet {
+    @media screen and (max-width: $desktop-breakpoint) and
+    (min-width: $tablet-breakpoint) {
+        .writeup {
+            width: 100%;
+            margin: auto;
+            
+            &-div__content {
+                width: 100%;
+                padding: 20px 32px 0 32px;
+                margin: auto;
+            }
+
+            &-div__content2 {
+                width: 80%;
+                padding: 20px 0 0 0;
+                margin: auto;
+                
+            }
+
+            &-div__content3 {
+                width: 100%;
+                margin: auto;
+
+                display: inline-flex;
+                justify-content: space-between;
+
+                p {
+                    width: 48%;
+                }
+            }
+
+            .writeup-img__box {
+                width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 12px solid $colorpri03;
+                box-shadow: 1px 8px 8px 5px $colorpri02;
+                margin-bottom: 16px;
+
+                font-family: "Another Typewriter";
+                font-size: 11px;
+                text-align: right;
+            }
+            
+            img {
+                width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h3, h4 {
+                font-family: "Another Typewriter";
+                line-height: 180%;
+            }
+        }
+    }
+}
+
+
+@mixin writeup-mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+        .writeup {
+            width: 100%;
+            margin: auto;
+            
+            &-div__content {
+                width: 100%;
+                padding: 12px 16px 0 16px;
+                margin: auto;
+            }
+
+            &-div__content2 {
+                width: 100%;
+                padding: 12px 0 0 0;
+                margin: auto;
+                
+            }
+
+            &-div__content3 {
+                width: 90%;
+                padding: 12px 0 0 0;
+                margin: auto;
+                
+                display: block;
+                justify-content: space-between;
+
+                p {
+                    width: 90%;
+                }
+                
+            }
+
+            .writeup-img__box {
+                width: 90%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 10px solid $colorpri03;
+                box-shadow: 1px 6px 6px 3px $colorpri02;
+                margin-bottom: 10px;
+
+                font-family: "Another Typewriter";
+                font-size: 10.5px;
+                text-align: right;
+            }
+            
+            img {
+                width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h3, h4 {
+                font-family: "Another Typewriter";
+                line-height: 180%;
+            }
+        }
+    }
+}

@@ -3,28 +3,50 @@
 // import files
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
+@use "./partials/layout" as *;
 @use "./partials/header" as *;
 @use "./partials/hero" as *;
-@use "./partials/blocks" as *;
+@use "./partials/writeup" as *;
 @use "./partials/gallery" as *;
+@use "./partials/convo" as *;
+@use "./partials/shows" as *;
 @use "./partials/footer" as *;
 @use "./bio.css" as *;      //???
 @use "./partials/fonts" as *;
+
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'FontAvenir', Arial, Helvetica, sans-serif;
-    background-color: $bgcolor01;
+    font-size: 16px;
+
+    width: 100%;
+    height: 100%;
+
     margin: 0;
     padding: 0;
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    background-color: $bgcolor06;
+    background: rgba(255, 255, 255, 0.8) url("../assets/images/hero-bio.jpg");
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
+
+
+//binder
+@include layout-desktop;
+@include layout-tablet;
+@include layout-mobile;
 
 
 //header
@@ -41,10 +63,10 @@ body {
 
 
 
-//blocks
-@include block-desktop;
-@include block-tablet;
-@include block-mobile;
+//writeup
+@include writeup-desktop;
+@include writeup-tablet;
+@include writeup-mobile;
 
 
 
@@ -54,10 +76,26 @@ body {
 @include gallery-mobile;
 
 
+
+//convo
+@include convo-desktop;
+@include convo-tablet;
+@include convo-mobile;
+
+
+
+//shows
+@include shows-desktop;
+@include shows-tablet;
+@include shows-mobile;
+
+
+
 //footer
 @include footer-desktop;
 @include footer-tablet;
 @include footer-mobile;
+
 
 
 //fonts
@@ -66,10 +104,17 @@ body {
 @include fonts-mobile;
 
 
+
 //etc
 .div-buffer {
     width: 100%;
     height: 90px;
-    background-color: aqua;
+    background-color: $bgcolor01;   //aqua;
     clear: both;
+}
+
+.div-watermark {
+    position: relative; 
+    right: 0;
+    bottom: 0;
 }

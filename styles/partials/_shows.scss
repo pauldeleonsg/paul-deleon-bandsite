@@ -1,0 +1,263 @@
+/* _SHOWS.SCSS */
+@use "./variables" as *;
+
+
+@mixin shows-desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        .shows {
+            width: 100%;
+            margin: auto;
+            
+            &-div__content {
+                width: 100%;
+                padding: 40px 64px;
+                margin: auto;
+
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &-div__title {
+                width: 20%;
+                max-width: 200px;
+            }
+
+            &-div__listing {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+        }
+
+        .ticket {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            &__label {
+                width: 10%;
+                max-width: 80px;
+                color: $colorpri02;
+                text-transform: uppercase;
+                height: 20px;
+                visibility: hidden;
+            }
+
+            &__labelhr {
+                width: 30%;
+                max-width: 250px;
+                color: $colorpri02;
+                text-transform: uppercase;
+                height: 40px;
+                text-align: center;
+            }
+
+            &__index {
+                font-weight: bold;
+            }
+
+            &__desc {
+                width: 20%;
+                max-width: 180px;
+                font-size: 14px;
+                height: 24px;
+                margin-bottom: 8px;
+            }
+        }
+
+        .ticket:nth-last-of-type(1) {order: -1;}
+        
+        button {
+            //margin: auto;
+            width: 160px;
+            height: 28px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: $fontcolor02;
+            background-color: $colorpri01;
+            text-transform: uppercase; 
+        }
+
+        button:hover {
+            color: $fontcolor04;
+        }
+
+        hr {
+            width: 100%;
+            max-width: 700px;
+        }
+
+    }
+}
+
+@mixin shows-tablet {
+    @media screen and (max-width: $desktop-breakpoint) and
+    (min-width: $tablet-breakpoint) {
+        .shows {
+            width: 100%;
+            margin: auto;
+            
+            &-div__content {
+                width: 100%;
+                padding: 40px 32px;
+                margin: auto;
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-div__title {
+                width: 100%;
+            }
+
+            &-div__listing {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+
+        .ticket {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            &__label {
+                //width: 20%;
+                //max-width: 80px;
+                color: $colorpri02;
+                text-transform: uppercase;
+                height: 20px;
+                visibility: hidden;
+            }
+
+            &__labelhr {
+                width: 30%;
+                max-width: 160px;
+                color: $colorpri02;
+                text-transform: uppercase;
+                height: 40px;
+                text-align: center;
+            }
+
+            &__index {
+                font-weight: bold;
+            }
+
+            &__desc {
+                width: 25%;
+                max-width: 120px;
+                font-size: 14px;
+                height: 24px;
+                margin-bottom: 8px;
+            }
+        }
+
+        .ticket:nth-last-of-type(1) {order: -1;}
+
+        
+        button {
+            width: 120px;
+            height: 28px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: $fontcolor02;
+            background-color: $colorpri01;
+            text-transform: uppercase; 
+            margin-left: 10px;
+        }
+
+        button:hover {
+            color: $fontcolor04;
+        }
+
+        hr {
+            width: 100%;
+            max-width: 700px;
+        }
+
+    }
+}
+
+
+@mixin shows-mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+        .shows {
+            width: 100%;
+            margin: auto;
+            
+            &-div__content {
+                width: 100%;
+                padding: 40px 12px;
+                margin: auto;
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-div__title {
+                width: 100%;
+            }
+
+            &-div__listing {
+                width: 100%;
+            }
+
+        }
+
+        .ticket {
+            display: flex;
+            flex-direction: column;
+            
+            &__label {
+                color: $colorpri02;
+                text-transform: uppercase;
+                height: 20px;
+            }
+
+            &__labelhr {
+                width: 30%;
+                max-width: 160px;
+                color: $colorpri02;
+                text-transform: uppercase;
+                height: 40px;
+                text-align: center;
+            }
+
+            &__index {
+                font-weight: bold;
+            }
+
+            &__desc {
+                font-size: 14px;
+                height: 24px;
+                margin-bottom: 8px;
+            }
+        }
+
+        .ticket:nth-last-of-type(1) {visibility: hidden; height: 0;}
+        
+        button {
+            margin: auto;
+            width: 80%;
+            height: 28px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: $fontcolor02;
+            background-color: $colorpri01;
+            text-transform: uppercase; 
+        }
+
+        button:hover {
+            color: $fontcolor04;
+        }
+
+        hr {
+            width: 100%;
+        }
+
+    }
+}

@@ -4,39 +4,41 @@
 
 @mixin hero-desktop {
     @media screen and (min-width: $desktop-breakpoint) {
-        .div-hero {
+        .hero {
             width: 100%;
-            min-width: 1024px;
-            height: 100%;
-            min-height: 620px;
-        
-            background-image: url("../assets/images/hero-bio.jpg");
+            height: 620px;
+            max-height: 620px;
+
+            display: flex;
             
+            background-color: $bgcolor01;
             background-size: cover;
             background-position: center center; 
             background-repeat: no-repeat; 
 
-            display: flex;
-            flex-flow: column;
-            height: 100%;
+            text-shadow: 5px 5px 10px $bgcolor02;
+            color: $fontcolor02;
+        }
 
-            margin-bottom: 70px;
-            
-            &__wrap {
-                width: 100%;
-                height: 620px;
-                color: $fontcolor02;
-                background-color: rgba(0, 0, 0, 0.5);
-        
-                display: flex;
-                align-items: center;
-        
-                padding: 64px;
-        
-            }
-        
+        .hero_bio {
+            background-image: url("../../assets/images/hero-bio.jpg");
+        }
+
+        .hero_show {
+            background-image: url("../../assets/images/hero-shows.jpg");
         }
         
+        .hero-div__content {
+            width: 50%;
+            margin: auto;
+            padding: 64px;
+        }
+
+        .hero-div__content2 {
+            width: 50%;
+            margin: auto;
+            padding: 64px;
+        }
     }
 }
 
@@ -44,37 +46,41 @@
 @mixin hero-tablet {
     @media screen and (max-width: $desktop-breakpoint) and
     (min-width: $tablet-breakpoint) {
-        .div-hero {
+        .hero {
             width: 100%;
-            min-width: 768px;
-            height: 100%;
-            min-height: 510px;
-        
-            background-image: url("../assets/images/hero-bio.jpg");
+            height: 540px;
+
+            display: flex;
+            flex-wrap: wrap;
             
+            background-image: url("../assets/images/hero-bio.jpg");
+            background-color: $bgcolor01;
             background-size: cover;
             background-position: center center; 
             background-repeat: no-repeat; 
 
-            display: flex;
-            flex-flow: column;
-            height: 100%;
+            text-shadow: 5px 5px 10px $bgcolor02;
+            color: $fontcolor02;
+        }
+        
+        .hero_bio {
+            background-image: url("../../assets/images/hero-bio.jpg");
+        }
 
-            margin-bottom: 40px;
-            
-            &__wrap {
-                width: 100%;
-                height: 510px;
-                color: $fontcolor02;
-                background-color: rgba(0, 0, 0, 0.5);
+        .hero_show {
+            background-image: url("../../assets/images/hero-shows.jpg");
+        }
         
-                display: flex;
-                align-items: center;
-        
-                padding: 32px;
-        
-            }
-        
+        .hero-div__content {
+            width: 100%;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .hero-div__content2 {
+            width: 100%;
+            margin: auto;
+            padding: 30px;
         }
         
     }
@@ -84,39 +90,42 @@
 
 @mixin hero-mobile {
     @media screen and (max-width: $mobile-breakpoint) {
-        .div-hero {
+        .hero {
             width: 100%;
-            max-width: 767px;
-            min-height: 375px;
-            height: 100%;
-            max-height: 510px;
-            min-height: 250px;
-        
-            background-image: url("../assets/images/hero-bio.jpg");
-            
-            background-size: cover;
-            background-position: center right; 
-            background-repeat: no-repeat; 
+            height: 280px;
 
             display: flex;
-            flex-flow: column;
-            height: 100%;
-
-            margin-bottom: 24px;
+            flex-wrap: wrap;
             
-            &__wrap {
-                width: 100%;
-                color: $fontcolor02;
-                background-color: rgba(0, 0, 0, 0.5);
+            background-image: url("../assets/images/hero-bio.jpg");
+            background-color: $bgcolor01;
+            background-size: cover;
+            background-position: center center; 
+            background-repeat: no-repeat; 
+
+            text-shadow: 5px 5px 10px $bgcolor02;
+            color: $fontcolor02;
+        }
+
+        .hero_bio {
+            background-image: url("../../assets/images/hero-bio.jpg");
+        }
+
+        .hero_show {
+            background-image: url("../../assets/images/hero-shows.jpg");
+        }
         
-                display: flex;
-                align-items: center;
-                flex: 1 1 auto;
         
-                padding: 32px;
-        
-            }
-        
+        .hero-div__content {
+            width: 100%;
+            margin: auto;
+            padding: 16px;
+        }
+
+        .hero-div__content2 {
+            width: 100%;
+            margin: auto;
+            padding: 16px;
         }
         
     }

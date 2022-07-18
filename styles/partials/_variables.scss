@@ -16,14 +16,25 @@
     src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf");
 }
 
+@font-face {
+    font-family: 'Another Typewriter';
+    src: url("../../assets/fonts/atwriter.ttf");
+}
+
 $fontcolor01 : #323232;
 $fontcolor02 : #ffffff;
+$fontcolor03 : #680000;
+$fontcolor04 : #f6ff00;
+$fontcolor05 : #d4d4d4;
+
 
 //colors
 $bgcolor01 : #ffffff;
 $bgcolor02 : #000000;
 $bgcolor03 : #fafafa;
 $bgcolor04 : #323232;
+$bgcolor05 : #ffe8f6;
+$bgcolor06 : #fed8ec;
 
 
 $colorpri01 : #323232;      //bandsite blk
@@ -36,11 +47,39 @@ $colorsec03 : #fafafa;      //Alabaster: Alternative light background color
 
 $colorhdr01 : #323232;
 
+
+//buttons
+
+$colorbtn00 : #245900;
+$colorbtn01 : #276100;
+$colorbtn10 : #2c6c00;
+$colorbtn11 : #2d6f00;
+$colorbtn30 : #9c5400;
+$colorbtn31 : #b26000;
+$colorbtn20 : #8e7015;
+$colorbtn21 : #a48117;
+$colorbtn40 : #7a0000;
+$colorbtn41 : #900000;
+$colorbtn50 : #680000;
+$colorbtn51 : #3e0808;
+$colorbtn60 : #323232;
+$colorbtn61 : #000000;
+
 //breakpoints
+$desktop-maxpoint: 1600px;      //max desktop
 $desktop-breakpoint: 1024px;
 $tablet-breakpoint: 768px;
 $mobile-breakpoint: 767px;      //max
 
+
+//layout fix
+$spine-desktop : 1500px;
+$spine-tablet : 800px;
+$spine-mobile : 360px;
+
+$bind-desktop : 1400px;
+$bind-tablet : 700px;
+$bind-mobile : 340px;
 
 
 
