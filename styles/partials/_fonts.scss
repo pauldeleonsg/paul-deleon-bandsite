@@ -2,6 +2,34 @@
 @use "./variables" as *;
 
 
+//import fonts
+@font-face {
+    font-family: 'AvenirReg';
+    src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'AvenirBold';
+    src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf");
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'AvenirDemi';
+    src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Another Typewriter';
+    src: url("../../assets/fonts/atwriter.ttf");
+    font-weight: normal;
+}
+
+
+
+
 @mixin fonts-desktop {
     @media screen and (min-width: $desktop-breakpoint) {
         h1 {

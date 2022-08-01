@@ -10,36 +10,25 @@
             background-color: $bgcolor01;
             padding-bottom: 40px;
 
-            &-div__content {
+            &-div__title {
                 width: 100%;
                 padding: 40px 64px 0 64px;
                 margin: auto;
             }
 
-            &-div__content2 {
+            &-div__body {
                 width: 80%;
                 margin: auto;
 
             }
 
-            &-div__content3 {
+            &-div__row--one {
                 width: 100%;
                 max-width: 700px;
                 margin: auto;
                 margin-bottom: 10px;
                 
                 display: flex;
-            }
-
-            &-div__content4 {
-                width: 100%;
-                max-width: 700px;
-                margin: auto;
-                margin-bottom: 10px;
-                border-bottom: 1px solid $colorsec02;
-                
-                display: flex;
-
             }
 
             &-div__form-filler {
@@ -73,6 +62,12 @@
             background-color: $colorpri02;
         }
 
+        img.likes {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
         label {
             width: 80%;
             min-width: 500px;
@@ -81,7 +76,6 @@
             font-size: 12px;
             line-height: 20px;
             color: $colorpri02;
-            //text-transform: uppercase;
         }
 
         input[type=text]{
@@ -138,6 +132,7 @@
             width: 100%;
             display: flex;
             flex-wrap: wrap;
+            list-style: none;
 
             li:nth-of-type(1) {
                 width: 70%;
@@ -149,6 +144,8 @@
                 width: 30%;
                 text-align: right;
                 color: $colorpri02;
+                font-size: 14px;
+                font-weight: bold;
             }
 
             li:nth-of-type(3) {
@@ -158,12 +155,20 @@
                 font-size: 14px;
                 line-height: 160%;
             }
+
+            li:nth-of-type(4) {
+                width: 100%;
+                padding-top: 10px;
+                color: $colorpri01;
+                font-size: 12px;
+                line-height: 160%;
+                text-align: right;
+            }
         }
 
         hr {
             border: 1px solid $colorsec02;
             width: 100%;
-            //max-width: 600px;
             margin-bottom: 20px;
         }
     }
@@ -178,33 +183,24 @@
             background-color: $bgcolor01;
             padding-bottom: 40px;
 
-            &-div__content {
+            &-div__title {
                 width: 100%;
                 padding: 40px 32px 0 32px;
                 margin: auto;
             }
 
-            &-div__content2 {
+            &-div__body {
                 width: 80%;
                 margin: auto;
 
             }
 
-            &-div__content3 {
+            &-div__row--one {
                 width: 100%;
                 margin: auto;
                 margin-bottom: 10px;
                 
                 display: flex;
-            }
-
-            &-div__content4 {
-                width: 100%;
-                margin: auto;
-                margin-bottom: 10px;
-                
-                display: flex;
-
             }
 
             &-div__form-filler {
@@ -235,6 +231,12 @@
             height: 48px;
             border-radius: 50%;
             background-color: $colorpri02;
+        }
+
+        img.likes {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
         }
 
         label {
@@ -298,6 +300,7 @@
             width: 70%;
             display: flex;
             flex-wrap: wrap;
+            list-style: none;
 
             li:nth-of-type(1) {
                 width: 70%;
@@ -309,6 +312,8 @@
                 width: 30%;
                 text-align: right;
                 color: $colorpri02;
+                font-size: 14px;
+                font-weight: bold;
             }
 
             li:nth-of-type(3) {
@@ -317,6 +322,15 @@
                 color: $colorpri01;
                 font-size: 14px;
                 line-height: 160%;
+            }
+
+            li:nth-of-type(4) {
+                width: 100%;
+                padding-top: 10px;
+                color: $colorpri01;
+                font-size: 12px;
+                line-height: 160%;
+                text-align: right;
             }
         }
 
@@ -338,33 +352,24 @@
             background-color: $bgcolor01;
             padding-bottom: 40px;
 
-            &-div__content {
+            &-div__title {
                 width: 100%;
                 padding: 40px 32px 0 32px;
                 margin: auto;
             }
 
-            &-div__content2 {
+            &-div__body {
                 width: 80%;
                 margin: auto;
 
             }
 
-            &-div__content3 {
+            &-div__row--one {
                 width: 100%;
                 margin: auto;
                 margin-bottom: 10px;
                 
                 display: flex;
-            }
-
-            &-div__content4 {
-                width: 100%;
-                margin: auto;
-                margin-bottom: 10px;
-                
-                display: flex;
-
             }
 
             &-div__form-filler {
@@ -397,6 +402,12 @@
             background-color: $colorpri02;
         }
 
+        img.likes {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
         label {
             width: 80%;
             padding: 0;
@@ -458,6 +469,7 @@
             width: 70%;
             display: flex;
             flex-wrap: wrap;
+            list-style: none;
 
             li:nth-of-type(1) {
                 width: 70%;
@@ -469,6 +481,8 @@
                 width: 30%;
                 text-align: right;
                 color: $colorpri02;
+                font-size: 14px;
+                font-weight: bold;
             }
 
             li:nth-of-type(3) {
@@ -477,6 +491,15 @@
                 color: $colorpri01;
                 font-size: 14px;
                 line-height: 160%;
+            }
+
+            li:nth-of-type(4) {
+                width: 100%;
+                padding-top: 10px;
+                color: $colorpri01;
+                font-size: 12px;
+                line-height: 160%;
+                text-align: right;
             }
         }
 

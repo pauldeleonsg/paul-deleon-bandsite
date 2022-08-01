@@ -1,40 +1,39 @@
 /* _VARIABLES.SCSS */
 
-//font
-@font-face {
-    font-family: 'AvenirReg';
-    src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf");
-}
-
-@font-face {
-    font-family: 'AvenirBold';
-    src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf");
-}
-
-@font-face {
-    font-family: 'AvenirDemi';
-    src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf");
-}
-
-@font-face {
-    font-family: 'Another Typewriter';
-    src: url("../../assets/fonts/atwriter.ttf");
-}
-
-$fontcolor01 : #323232;
-$fontcolor02 : #ffffff;
-$fontcolor03 : #680000;
-$fontcolor04 : #f6ff00;
-$fontcolor05 : #d4d4d4;
+@use "sass:map";
 
 
-//colors
-$bgcolor01 : #ffffff;
-$bgcolor02 : #000000;
-$bgcolor03 : #fafafa;
-$bgcolor04 : #323232;
-$bgcolor05 : #ffe8f6;
-$bgcolor06 : #fed8ec;
+//Colors
+$bandcolors : (
+  "bandpri01" : #323232,        //bandsite primary1 black
+  "bandpri02" : #afafaf,        //bandsite primary2 silver
+  "bandpri03" : #ffffff,        //bandsite primary3 white
+  "bandsec01" : #000000,        //bandsite secondary1 CTA hover state
+  "bandsec02" : #e1e1e1,        //bandsite secondary2 Divider line. Form field outline.
+  "bandsec03" : #fafafa,        //bandsite secondary3 Alternative light background color
+  "bandwrn01" : #f6ff00,        //bandsite notice yellow
+  "banderr01" : #680000,        //bandsite error red
+  "bandetc01" : #d4d4d4,        //bandsite etc1
+  "bandetc02" : #ffe8f6,        //bandsite etc2
+  "bandetc03" : #fed8ec,        //bandsite etc3
+);
+
+
+//font colors
+$fontcolor01 :  map.get($bandcolors, "bandpri01");
+$fontcolor02 :  map.get($bandcolors, "bandpri03");
+$fontcolor03 :  map.get($bandcolors, "banderr01");
+$fontcolor04 :  map.get($bandcolors, "bandwrn01");
+$fontcolor05 :  map.get($bandcolors, "bandetc01");
+
+
+//background colors
+$bgcolor01 : map.get($bandcolors, "bandpri03");
+$bgcolor02 : map.get($bandcolors, "bandsec01");
+$bgcolor03 : map.get($bandcolors, "bandsec03");
+$bgcolor04 : map.get($bandcolors, "bandpri01");
+$bgcolor05 : map.get($bandcolors, "bandetc02");
+$bgcolor06 : map.get($bandcolors, "bandetc03");
 
 
 $colorpri01 : #323232;      //bandsite blk
@@ -48,22 +47,14 @@ $colorsec03 : #fafafa;      //Alabaster: Alternative light background color
 $colorhdr01 : #323232;
 
 
-//buttons
+//header colors
+$colorhdr01 : map.get($bandcolors, "bandpri01");
 
-$colorbtn00 : #245900;
-$colorbtn01 : #276100;
-$colorbtn10 : #2c6c00;
-$colorbtn11 : #2d6f00;
-$colorbtn30 : #9c5400;
-$colorbtn31 : #b26000;
-$colorbtn20 : #8e7015;
-$colorbtn21 : #a48117;
-$colorbtn40 : #7a0000;
-$colorbtn41 : #900000;
-$colorbtn50 : #680000;
-$colorbtn51 : #3e0808;
-$colorbtn60 : #323232;
-$colorbtn61 : #000000;
+
+//line colors
+$linecolor01 : map.get($bandcolors, "bandpri03");
+$linecolor02 : map.get($bandcolors, "bandsec02");
+
 
 //breakpoints
 $desktop-maxpoint: 1600px;      //max desktop
@@ -75,11 +66,11 @@ $mobile-breakpoint: 767px;      //max
 //layout fix
 $spine-desktop : 1500px;
 $spine-tablet : 800px;
-$spine-mobile : 360px;
+$spine-mobile : 380px;
 
-$bind-desktop : 1400px;
-$bind-tablet : 700px;
-$bind-mobile : 340px;
+$bind-desktop : 1480px;
+$bind-tablet : 760px;
+$bind-mobile : 360px;
 
 
 

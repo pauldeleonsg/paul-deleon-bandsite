@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
     <title>BandSite - Shows</title>
+    <link rel="icon" type="image/x-icon" href="../assets/logos/favicon.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/global.css">
 
-    <script src="../scripts/codShows.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <script src="../scripts/global.js"></script>
+    <script src="../scripts/util.js"></script>
+    <script src="../scripts/cookies.js"></script>
+    <script src="../scripts/build-shows-page.js"></script>
+
 </head>
 <body>
 
@@ -16,7 +23,7 @@
     <header>
         <div class="header-wrap">
             <div class="header-logo">
-                <a href="../index.html"><img src="../assets/logos/Logo-bandsite.svg"></a>
+                <a href="../index.html"><img src="../assets/logos/Logo-bandsite.svg" alt="The Bees Knees"></a>
             </div>
     
             <div class="header-nav">
@@ -27,22 +34,21 @@
             </div>
         </div>
     </header>
-
+    <!-- HEADER END -->
+    
 
     <div class="spine">     
         <div class="binder">        <!-- CENTERED CONTAINER --> 
 
-            <div class="div-buffer">&nbsp;</div>    <!-- top filler -->
-
 
             <!-- HERO -->
             <div class="hero hero_show">
-                <div class="hero-div__content">
+                <div class="hero-div__body">
                     <h3>Beautiful Beasts Album</h3>
                     <h1>Queen of Yellow x For The Stings</h1>
                 </div>
 
-                <div class="hero-div__content2">
+                <div class="hero-div__body">
                     <iframe width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/355965584&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/stpsoundcloud" title="stpsoundcloud" target="_blank" style="color: #cccccc; text-decoration: none;">stpsoundcloud</a> · <a href="https://soundcloud.com/stpsoundcloud/33a" title="Meadow" target="_blank" style="color: #cccccc; text-decoration: none;">Meadow</a></div>
                 </div>
             </div>
@@ -66,108 +72,119 @@
             <!-- SHOWS END -->
 
 
+
         </div>
     </div>
 
 
-
-
     <!-- FOOTER -->
     <footer>
-        <div class="footer-wrap">
+        <div class="footer-spine">
 
-            <!-- get in touch -->
-            <div class="footer-div__contain1">
-                <span><h2>Get in touch</h2></span>
-                <span>
-                    <ul>
-                        <li><a href="https://www.instagram.com/" target="_blank"><img class="social" src="../assets/icons/Icon-instagram.svg"></a></li>
-                        <li><a href="https://www.facebook.com/" target="_blank"><img class="social" src="../assets/icons/Icon-facebook.svg"></a></li>
-                        <li><a href="https://twitter.com/" target="_blank"><img class="social" src="../assets/icons/Icon-twitter.svg"></a></li>
-                    </ul>
-                </span>
-            </div>
+            <div class="footer-wrap">
 
-
-            <!-- footer logo -->
-            <div class="footer-div__contain1">
-                <a href="../index.html"><img class="logo" src="../assets/logos/Logo-bandsite.svg"></a>
-            </div>
-
-
-            <!-- contacts -->
-            <div class="footer-div__contain1">
-                <!-- contact1 -->
-                <div class="footer-div__contain2">
-                    <p class="font-footer">
-                        <b>Cam Adams<br>
-                        The Bees Knees Management</b>
-                    </p>
-            
-                    <p class="font-footer">
-                        503 Broadway Penthouse,<br>
-                        New York, NY 10012, USA
-                    </p>
-            
-                    <p class="font-footer">
-                        <a href="mailto://info@thebeeskness.com">info@thebeeskness.com</a>
-                    </p>
+                <!-- get in touch -->
+                <div class="footer-div__body">
+                    <span><h2>Get in touch</h2></span>
+                    <span>
+                        <ul class="social">
+                            <li class="social">
+                                <a href="https://www.instagram.com/" target="_blank">
+                                <img class="social" src="../assets/icons/Icon-instagram.svg" alt="Instagram"></a>
+                            </li>
+                            <li class="social">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                <img class="social" src="../assets/icons/Icon-facebook.svg" alt="Facebook"></a>
+                            </li>
+                            <li class="social">
+                                <a href="https://twitter.com/" target="_blank">
+                                <img class="social" src="../assets/icons/Icon-twitter.svg" alt="Twitter"></a>
+                            </li>
+                        </ul>
+                    </span>
                 </div>
-
-
-                <!-- contact2 -->
-                <div class="footer-div__contain2">
-                    <p class="font-footer">
-                        <b>Pearl Gregg<br>
-                        Limitless Artist Group</b>
-                    </p>
-            
-                    <p class="font-footer">
-                        Booking Agent for<br>
-                        USA / South America / Japan
-                    </p>
-            
-                    <p class="font-footer">
-                        <a href="mailto://pearl.gregg@limitlessag.com">pearl.gregg@limitlessag.com</a>
-                    </p>
+    
+                
+                <!-- footer logo -->
+                <div class="footer-div__body">
+                    <a href="index.html"><img class="logo" src="../assets/logos/Logo-bandsite.svg" alt="The Bees Knees"></a>
                 </div>
+    
+    
+                <!-- contacts -->
+                <div class="footer-div__body">
+                    <!-- contact1 -->
+                    <div class="footer-div__copy font-footer">
+                        <ul class="info">
+                            <li class="info">
+                                Cam Adams<br>
+                                The Bees Knees Management
+                            </li>
+                            <li class="info">
+                                503 Broadway Penthouse,<br>
+                                New York, NY 10012, USA
+                            </li>
+                            <li class="info">
+                                <a href="mailto:info@thebeesknees.com">info@thebeesknees.com</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    
+                    <!-- contact2 -->
+                    <div class="footer-div__copy font-footer">
+                        <ul class="info">
+                            <li class="info">
+                                Pearl Gregg<br>
+                                Limitless Artist Group
+                            </li>
+                            <li class="info">
+                                Booking Agent for<br>
+                                USA / South America / Japan
+                            </li>
+                            <li class="info">
+                                <a href="mailto://pearl.gregg@limitlessag.com">pearl.gregg@limitlessag.com</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    
+                    <!-- contact3 -->
+                    <div class="footer-div__copy font-footer">
+                        <ul class="info">
+                            <li class="info">
+                                Carson Whyte<br>
+                                ARCH Entertainment
+                            </li>
+                            <li class="info">
+                                Booking Agent for<br>
+                                UK / EU / AU
+                            </li>
+                            <li class="info">
+                                <a href="mailto://whyte@archentertainment.com">whyte@archentertainment.com</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-div__copy filler"></div>     <!-- space filler -->
 
-
-                <!-- contact3 -->
-                <div class="footer-div__contain2">
-                    <p class="font-footer">
-                        <b>Carson Whyte<br>
-                        ARCH Entertainment</b>
-                    </p>
-            
-                    <p class="font-footer">
-                        Booking Agent for<br>
-                        UK / EU / AU
-                    </p>
-            
-                    <p class="font-footer">
-                        <a href="mailto://whyte@archentertainment.com">whyte@archentertainment.com</a>
-                    </p>
                 </div>
-
-
-                <div class="footer-div__contain2 filler"></div>     <!-- space filler -->
-            </div>
-
-            
-            <!-- copyright -->
-            <div class="footer-div__contain1">
-                <p class="font-footer">
+                
+                <!-- copyright -->
+                <div class="footer-div__body font-footer">
                     Copyright The Bees Knees © 2021 All Rights Reserved
-                </p>
+                </div>
             </div>
-        </div>
 
+        </div>
     </footer>
+    <!-- FOOTER END -->
+
+    <script>
+        window.addEventListener("load", onWithTheShows);
+    
+    </script>
 
 </body>
 </html>
 
-<script>
-    displayShows();     //display show record
-</script>

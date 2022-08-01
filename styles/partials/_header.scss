@@ -10,9 +10,11 @@
             color: $fontcolor02;
             padding: 0;
 
+            /*
             position: fixed;
             top: 0;
             z-index: 99;        //on top of it all
+            */
 
             display: flex;
             justify-content: center;
@@ -73,7 +75,7 @@
                 }
         
                 li.isInactive {
-                    color : $colorsec02;
+                    color : $linecolor02;
                     border-bottom: 0;
                 }
             }
@@ -91,9 +93,11 @@
             background-color: $colorhdr01;
             color: $fontcolor02;
             
+            /*
             position: fixed;
             top: 0;
             z-index: 99;        //on top of it all
+            */
 
             display: flex;
             justify-content: center;
@@ -141,12 +145,12 @@
                 }
         
                 li:hover {
-                    border-bottom: 4px solid $colorpri03;
+                    border-bottom: 4px solid $linecolor01;
                 }
         
                 #here {
                     font-weight: bold;
-                    border-bottom: 4px solid $colorpri03;
+                    border-bottom: 4px solid $linecolor01;
                 }
                 a {
                     color: $fontcolor02;
@@ -154,7 +158,7 @@
                 }
         
                 li.isInactive {
-                    color : $colorsec02;
+                    color : $linecolor02;
                     border-bottom: 0;
                 }
             }
@@ -172,9 +176,11 @@
             color: $fontcolor02;
             padding: 0;
 
+            /*
             position: fixed;
             top: 0;
             z-index: 99;        //on top of it all
+            */
 
             display: flex;
             justify-content: center;
@@ -227,12 +233,12 @@
                 }
         
                 li:hover {
-                    border-bottom: 4px solid $colorpri03;
+                    border-bottom: 4px solid $linecolor01;
                 }
         
                 #here {
                     font-weight: bold;
-                    border-bottom: 4px solid $colorpri03;
+                    border-bottom: 4px solid $linecolor01;
                 }
                 a {
                     color: $fontcolor02;
@@ -240,7 +246,7 @@
                 }
         
                 li.isInactive {
-                    color : $colorsec02;
+                    color : $linecolor02;
                     border-bottom: 0;
                 }
             }
